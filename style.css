@@ -13,6 +13,7 @@ nav{
   background: #2c3e50;
   width: 100%;
   height: 80px;
+  
 }
 
 label.logo{
@@ -62,9 +63,11 @@ i{
 } 
 #check{
   display: none;
+ 
 }
 
 div {
+  
   display: flex;
   align-items: center;
   width: 100%;
@@ -77,8 +80,9 @@ div {
   display: block;
   position: relative;
     top: 15px;
+  z-index: 1;
 }
-}
+
 .typewriter-text {
   padding-right: 10px;
   color: #ffe509;
@@ -86,6 +90,8 @@ div {
   text-transform: uppercase;
   animation: cursor 1s ease-in-out infinite;
   font-weight: bold;
+  
+
 }
 @keyframes cursor {
   from { border-color: #ffe509; }
@@ -117,6 +123,7 @@ div {
     display: block;
   }
   ul{
+    z-index: 2;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -145,8 +152,8 @@ div {
 
 }
 div{
-  background: url(micro.jpg) no-repeat;
-  background-size: cover;
+  background: url(micro.jpg) no-repeat !important;
+  background-size: ;
   background-position: 50% 90%;
   height: calc(100vh - 80px);
 }
