@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   function typing( index, text ) {
     
-    var textIndex = 1;
+    var textIndex = 2;
 
     var tmp = setInterval(function() {
       if ( textIndex < text[ index ].length + 1 ) {
