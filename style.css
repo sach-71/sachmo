@@ -7,10 +7,11 @@ body{
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
+  overflow: hidden;
 }
 
 nav{
-  background: #2c3e50;
+  background: #c50707;
   width: 100%;
   height: 80px;
   
@@ -22,6 +23,7 @@ label.logo{
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold; 
+  cursor: pointer;
 
 }
 nav ul{
@@ -40,12 +42,14 @@ nav ul li a {
   color: white;
   font-size: 17px;
   text-transform: uppercase;
+  font-weight: bolder;
 }
 a.active,a:hover{
-  color: #0082e6;
+  color: #000000;
   transition: .5s;
   
   border-radius: 3px;
+
 }
 
 
@@ -75,7 +79,7 @@ div {
 }
 .typewriter {
   font-family: sans-serif;
-  color: #fff;
+  color: #000000;
   padding-left: 30px;
   display: block;
   position: relative;
@@ -85,8 +89,8 @@ div {
 
 .typewriter-text {
   padding-right: 10px;
-  color: #ffe509;
-  border-right: solid #ffe509 7px;
+  color: #000000;
+  border-right: solid #000000 7px;
   text-transform: uppercase;
   animation: cursor 1s ease-in-out infinite;
   font-weight: bold;
@@ -94,7 +98,7 @@ div {
 
 }
 @keyframes cursor {
-  from { border-color: #ffe509; }
+  from { border-color: #000000; }
   to { border-color: transparent; }
 }
 
@@ -127,7 +131,7 @@ div {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background: #c50707;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -144,16 +148,18 @@ div {
   }
   a:hover,a.active{
     background: none;
-    color:#0082e6;
+    color:#000000;
   }
   #check:checked ~ ul{
     left: 0;
+    
   }
 
 }
-div{
-  background: url(micro.jpg) no-repeat !important;
+div.home{
+  background: url(./images2.png)  no-repeat ;
   background-size: cover;
   background-position: 50% 90%;
   height: calc(100vh - 80px);
 }
+
