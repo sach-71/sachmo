@@ -7,7 +7,7 @@ body{
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
-  overflow: hidden;
+  
 }
 
 nav{
@@ -70,8 +70,7 @@ i{
  
 }
 
-div {
-  
+.home {
   display: flex;
   align-items: center;
   width: 100%;
@@ -79,7 +78,7 @@ div {
 }
 .typewriter {
   font-family: sans-serif;
-  color: #000000;
+  color: #ffffff;
   padding-left: 30px;
   display: block;
   position: relative;
@@ -89,7 +88,7 @@ div {
 
 .typewriter-text {
   padding-right: 10px;
-  color: #000000;
+  color: #ffffff;
   border-right: solid #000000 7px;
   text-transform: uppercase;
   animation: cursor 1s ease-in-out infinite;
@@ -157,9 +156,92 @@ div {
 
 }
 div.home{
-  background: url(./images2.png)  no-repeat ;
+  background:url(./singing-in-sunset-wallpaper.jpg) ;
   background-size: cover;
   background-position: 50% 90%;
-  height: calc(100vh - 80px);
+  height: calc(100vh);
 }
 
+
+.parallax2{
+  background: url('./retro-mustang-wallpaper.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 625px; 
+}
+.parallax3{
+  background: url('./art.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px; 
+}
+.para{
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+  padding: 3rem;
+  text-transform: uppercase;
+  background-color: #00000083;
+  
+}
+.para2{
+  text-align: center;
+  color: white;
+
+  padding: 3rem;
+  text-transform: uppercase;
+  background-color: #00000083;
+  
+}
+
+
+/*   ARROW ANIMATION  */
+.arrow-down{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.arrow-down::after{
+  
+  content: " ";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-right: 5px solid #c50707 ;
+  border-bottom: 5px solid #c50707;
+  transform: rotate(45deg);
+  -webkit-animation: 3s arrow infinite ease;
+  animation: 3s arrow infinite ease;
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes arrow{
+  0%, 100%{
+    top: 480px;
+  }
+  50%{
+    top: 530px;
+  }
+}
+
+@keyframes arrow{
+  0%, 100%{
+    top: 450px;
+  }
+  50%{
+    top: 510px;
+  }
+}
+/* ARROW ANIMATION ENDS */
