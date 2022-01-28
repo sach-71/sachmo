@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+
+
+    <!-- FONTS LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<!-- FONT LINK END-->
+
+    <title>SACH | WEBDEV</title>
+</head>
+<body>
+   
+
+    <!--MAIN PAGE STARTS -->
+    <div class="hero-img"></div>
+    <!--img src="/images/yatch.jpg" alt="nftimage"-->
+    <div class="wrapper" id="" >
+        <header>
+            <a href="#" class="logo">SACH<span> MO</span></a>     <!--LOGO| HOME-->
+            <nav>
+               
+            <ul class="ul">
+                <li><a href="#">HOME</a></li>
+                <li><a href="gallary.html">GALLERY</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+            <img class="menu" src="https://img.icons8.com/material-sharp/384/000000/menu--v1.png"/>
+        </header>
+
+        <section class="hero">
+            <h1>Regain your confidence </h1>
+            <p class="subhead">"To live a creative life, we must lose our fear of being wrong."</p>
+        </section>
+<br><br><br>
+        <section class="more-info">
+
+            <div class="feature">
+                <div class="content">
+                    <p class="title">IWATCH</p>
+                    <p class="desc">Introducing Apple Watch Series 7 and Apple Watch Nike. Buy now. The future of health is on your wrist. GPS. Heart rate notifications. Water resistant. Retina display. Services: Free no-contact delivery</p>
+                </div>
+                <img id="infoimg" src="iwatch1.jpg" alt="appleIwatch">
+            </div>
+
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">MACBOOK</p>
+                    <p class="desc">Explore the world of Mac. Check out the all-new MacBook Pro, MacBook Air, iMac, Mac mini, and more.</p>
+                </div>
+                <img id="infoimg"  src="mac.jpg" alt="MACBOOK">
+            </div>
+
+            <div class="feature">
+                <div class="content">
+                    <p class="title">IPAD</p>
+                    <p class="desc">Apple iPads are world-renowned tablets with cutting-edge technology for your everyday computing, creativity, and immersive entertainment.</p>
+                </div>
+                <img id="infoimg"  src="ipad.jpg" alt="IPAD">
+            </div>
+        </section>
+    </div>
+<!--MAIN PAGE ENDS-->
+
+<script>
+    const menu = document.querySelector('.menu')
+    const close = document.querySelector('.close')
+    const nav = document.querySelector('nav')
+
+    menu.addEventListener('click',() => {
+        nav.classList.add('open-nav')
+    })
+
+    close.addEventListener('click',() => {
+        nav.classList.remove('open-nav')
+    })
+</script>
+       
+</body>
+</html>
